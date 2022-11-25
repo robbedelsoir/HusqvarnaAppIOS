@@ -20,6 +20,7 @@
 		AC8A53E32931196A00C3266E /* MotorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8A53E22931196A00C3266E /* MotorRow.swift */; };
 		AC8A53E529311AA500C3266E /* MotorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8A53E429311AA500C3266E /* MotorList.swift */; };
 		AC8A53E729311BB900C3266E /* MotorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8A53E629311BB900C3266E /* MotorDetail.swift */; };
+		AC8A53E9293122A400C3266E /* MotorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8A53E8293122A400C3266E /* MotorImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		AC8A53E22931196A00C3266E /* MotorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorRow.swift; sourceTree = "<group>"; };
 		AC8A53E429311AA500C3266E /* MotorList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorList.swift; sourceTree = "<group>"; };
 		AC8A53E629311BB900C3266E /* MotorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorDetail.swift; sourceTree = "<group>"; };
+		AC8A53E8293122A400C3266E /* MotorImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				AC8A53E22931196A00C3266E /* MotorRow.swift */,
 				AC8A53E429311AA500C3266E /* MotorList.swift */,
 				AC8A53E629311BB900C3266E /* MotorDetail.swift */,
+				AC8A53E8293122A400C3266E /* MotorImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			files = (
 				AC8A53E729311BB900C3266E /* MotorDetail.swift in Sources */,
 				606DEB032926C04D0062C9BC /* ContentView.swift in Sources */,
+				AC8A53E9293122A400C3266E /* MotorImage.swift in Sources */,
 				606DEB012926C04D0062C9BC /* IOS_ProjectApp.swift in Sources */,
 				AC8A53DB293117D100C3266E /* ModelData.swift in Sources */,
 				AC8A53D9293116B100C3266E /* Motoroverzicht.swift in Sources */,
