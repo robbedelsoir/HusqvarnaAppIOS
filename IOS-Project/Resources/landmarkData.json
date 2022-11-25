@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Husqvarna125",
+        "category": "Enduro",
+        "id": 1001,
+        "isFeatured": true,
+        "isFavorite": true,
+        "description": "Dikke snelle motor jonge",
+        "imageName": "Husqvarna125"
+    },
+    {
+        "name": "Husqvarna250",
+        "category": "Enduro",
+        "id": 1001,
+        "isFeatured": true,
+        "isFavorite": true,
+        "description": "Dikke snellere motor jonge",
+        "imageName": "Husqvarna250"
+    }
+]
