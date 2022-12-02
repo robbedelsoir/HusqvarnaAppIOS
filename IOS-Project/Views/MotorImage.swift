@@ -22,6 +22,6 @@ struct MotorImage: View {
 
 struct MotorImage_Previews: PreviewProvider {
     static var previews: some View {
-        MotorImage(image: Image("turtlerock"))
+        MotorImage(image: Image("Husqvarna125"))
     }
 }

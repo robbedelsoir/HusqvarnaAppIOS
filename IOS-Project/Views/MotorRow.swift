@@ -14,18 +14,19 @@ struct MotorRow: View {
         ZStack{
             landmark.image.renderingMode(.original)
                 .resizable()
-                .frame(width: 155, height: 225)
+                .frame(width:250, height: 225)
                 .background(Color.black)
                 .cornerRadius(10)
                 .opacity(0.9)
                 .aspectRatio(contentMode: .fill)
             
-            
-            Spacer()
-            
             Text(landmark.name)
                 .foregroundColor(Color.black)
                 .font(.system(size: 20, weight: .bold, design: Font.Design.default))
+                
+            Spacer()
+            
+            
         }
     }
     

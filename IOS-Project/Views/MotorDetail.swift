@@ -13,9 +13,9 @@ struct MotorDetail: View {
     var body: some View {
         VStack {
 
-                    MotorImage(image: landmark.image)
-                           .offset(y: -130)
-                           .padding(.bottom, -130)
+                  
+                           
+                           
                     
 
                     VStack(alignment: .leading) {

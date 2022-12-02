@@ -1,6 +1,6 @@
 [
     {
-        "name": "Husqvarna125",
+        "name": "TX125",
         "category": "Enduro",
         "id": 1001,
         "isFeatured": true,
@@ -9,12 +9,41 @@
         "imageName": "Husqvarna125"
     },
     {
-        "name": "Husqvarna250",
+        "name": "TX250",
         "category": "Enduro",
-        "id": 1001,
+        "id": 1002,
         "isFeatured": true,
         "isFavorite": true,
-        "description": "Dikke snellere motor jonge",
+        "description": "traag poep ding",
+        "imageName": "Husqvarna250"
+    },
+    {
+        "name": "Husqvarna250",
+        "category": "Enduro",
+        "id": 1003,
+        "isFeatured": true,
+        "isFavorite": true,
+        "description": "traag poep ding",
+        "imageName": "Husqvarna250"
+    },
+    {
+        "name": "Husqvarna250",
+        "category": "Enduro",
+        "id": 1004,
+        "isFeatured": true,
+        "isFavorite": true,
+        "description": "traag poep ding",
+        "imageName": "Husqvarna250"
+    },
+    {
+        "name": "Husqvarna250",
+        "category": "Enduro",
+        "id": 1005,
+        "isFeatured": true,
+        "isFavorite": true,
+        "description": "traag poep ding",
         "imageName": "Husqvarna250"
     }
+    
+    
 ]
