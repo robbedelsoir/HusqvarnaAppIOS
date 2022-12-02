@@ -50,6 +50,7 @@
 		606DEB172926C04F0062C9BC /* IOS-ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS-ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		606DEB1B2926C04F0062C9BC /* IOS_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_ProjectUITests.swift; sourceTree = "<group>"; };
 		606DEB1D2926C04F0062C9BC /* IOS_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC4EC327293A469600938CC1 /* Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Video.mp4; sourceTree = "<group>"; };
 		AC8A53B729310E7800C3266E /* SwiftUIMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMap.swift; sourceTree = "<group>"; };
 		AC8A53CA2931159B00C3266E /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		AC8A53D8293116B100C3266E /* Motoroverzicht.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motoroverzicht.swift; sourceTree = "<group>"; };
@@ -136,6 +137,7 @@
 		AC8A53BB2931159B00C3266E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AC4EC327293A469600938CC1 /* Video.mp4 */,
 				606DEB042926C04F0062C9BC /* Assets.xcassets */,
 				AC8A53CA2931159B00C3266E /* landmarkData.json */,
 			);

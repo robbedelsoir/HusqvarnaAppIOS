@@ -12,12 +12,6 @@ struct MotorDetail: View {
 
     var body: some View {
         VStack {
-
-                  
-                           
-                           
-                    
-
                     VStack(alignment: .leading) {
                         Text(landmark.name)
                             .font(.title)
