@@ -1,17 +1,23 @@
 //
-//  IOS_ProjectApp.swift
+//  HusqvarnaApp.swift
 //  IOS-Project
 //
-//  Created by Docent on 17/11/2022.
+//  Created by Guest User on 09/12/2022.
 //
 
 import SwiftUI
+import Firebase
 
 @main
-struct IOS_ProjectApp: App {
-    var body: some Scene {
+struct HusqvarnaApp: App{
+    init(){
+        FirebaseApp.configure()
+    }
+    
+    var body: some Scene{
         WindowGroup {
             ContentView()
         }
     }
 }
+
