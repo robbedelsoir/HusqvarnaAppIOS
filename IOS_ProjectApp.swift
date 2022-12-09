@@ -21,3 +21,10 @@ struct HusqvarnaApp: App{
     }
 }
 
+
+//maps integraten
+//loading screen
+//styling
+//terug button
+//
+
