@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1416E657294A617500D10927 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416E656294A617500D10927 /* Colors.swift */; };
 		606DEB012926C04D0062C9BC /* IOS_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DEB002926C04D0062C9BC /* IOS_ProjectApp.swift */; };
 		606DEB032926C04D0062C9BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DEB022926C04D0062C9BC /* ContentView.swift */; };
 		606DEB052926C04F0062C9BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606DEB042926C04F0062C9BC /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1416E656294A617500D10927 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		606DEAFD2926C04D0062C9BC /* IOS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		606DEB002926C04D0062C9BC /* IOS_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_ProjectApp.swift; sourceTree = "<group>"; };
 		606DEB022926C04D0062C9BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				AC4EC327293A469600938CC1 /* Video.mp4 */,
 				606DEB042926C04F0062C9BC /* Assets.xcassets */,
 				AC8A53CA2931159B00C3266E /* landmarkData.json */,
+				1416E656294A617500D10927 /* Colors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC8A53E729311BB900C3266E /* MotorDetail.swift in Sources */,
+				1416E657294A617500D10927 /* Colors.swift in Sources */,
 				606DEB032926C04D0062C9BC /* ContentView.swift in Sources */,
 				AC8A53E9293122A400C3266E /* MotorImage.swift in Sources */,
 				606DEB012926C04D0062C9BC /* IOS_ProjectApp.swift in Sources */,

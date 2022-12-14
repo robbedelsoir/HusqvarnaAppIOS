@@ -19,11 +19,14 @@ struct ContentView: View {
     
     var content: some View {
         ZStack{
-            Color.black
+            Color.gray
             
             VStack(spacing: 20){
-                Text("Welcome")
-                    .foregroundColor(.white)
+                
+                Image("husqvarna")
+                    .resizable()
+                    .frame(width: 99, height: 118, alignment: .center)
+                    .offset(y: -100)
                 
                 TextField("Email", text: $email)
                     .foregroundColor(.white)
@@ -49,7 +52,6 @@ struct ContentView: View {
                 Rectangle()
                     .frame(width: 350, height: 1)
                     .foregroundColor(.white)
-                
                 Button{
                     register()
                 } label: {
@@ -57,23 +59,34 @@ struct ContentView: View {
                         .bold()
                         .frame(width: 200, height: 40)
                         .background(
-                            RoundedRectangle(cornerRadius: 10, style: .continuous).fill(.blue))
+                            RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color(hex: 003686)))
                         .foregroundColor(.white)
                 }
+                Image("LineYellow")
+                    .resizable()
+                    .frame(width: 300, height: 2, alignment: .center)
+                    
+                
                 Button{
                     login()
                 } label: {
                     Text("Already have an account? Login")
                         .bold()
-                        .foregroundColor(.white)
+                        .foregroundColor(Color(hex: 003686))
                 }
                 //.padding(.top)
                 
                 
+               
                 
             }
             .frame(width: 350)
-
+            .background(
+                    Image("wallpaperhusqvarna")
+                        .resizable()
+                        .edgesIgnoringSafeArea(.all)
+                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                )
         }
         .ignoresSafeArea()
     }

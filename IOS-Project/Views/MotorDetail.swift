@@ -11,7 +11,12 @@ struct MotorDetail: View {
     var landmark: Motoroverzicht
 
     var body: some View {
-        VStack {
+        VStack(spacing: 20){
+            
+            Image(landmark.image1)
+                .resizable()
+                .frame(width: 99, height: 118, alignment: .center)
+            
                     VStack(alignment: .leading) {
                         Text(landmark.name)
                             .font(.title)

@@ -19,6 +19,8 @@ struct HusqvarnaApp: App{
             ContentView()
         }
     }
+
+
 }
 
 
