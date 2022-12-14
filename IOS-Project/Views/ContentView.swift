@@ -53,9 +53,10 @@ struct ContentView: View {
                     .frame(width: 350, height: 1)
                     .foregroundColor(.white)
                 Button{
-                    register()
+                    
+                    login()
                 } label: {
-                    Text("Sign up")
+                    Text("LOGIN")
                         .bold()
                         .frame(width: 200, height: 40)
                         .background(
@@ -68,9 +69,9 @@ struct ContentView: View {
                     
                 
                 Button{
-                    login()
+                    register()
                 } label: {
-                    Text("Already have an account? Login")
+                    Text("Don't have an account? Sign up")
                         .bold()
                         .foregroundColor(Color(hex: 003686))
                 }

@@ -3,11 +3,11 @@
         "name": "TX125",
         "category": "Enduro",
         "id": 1001,
-        "image1": "TC125_banner4"
         "isFeatured": true,
         "isFavorite": true,
         "description": "Small in capacity while big on capability, the 2023 TC 125 receives multiple technical upgrades, headlined by the inclusion of EFI and E-Start technology. These revisions are instantly noticeable as after a simple push of a button, the engine starts easily, and, once out on track, the TC 125 delivers an unmatched experience. Further changes include a new cylinder with a highly innovative electronic exhaust control system, and a lighter crank for improved throttle response and reduced vibration. Continuing to benefit from class-leading components including WP Suspension, a ProTaper handlebar, and a polyamide-reinforced subframe, the TC 125 receives all-new bodywork and a striking new look to remain at the forefront of the highly competitive 125cc class.",
-        "imageName": "Husqvarna125"
+        "imageName": "Husqvarna125",
+        "image1": "TC125_banner4"
     },
     {
         "name": "TX250",
@@ -16,6 +16,7 @@
         "isFeatured": true,
         "isFavorite": true,
         "description": "traag poep ding",
+        "image1": "TC125_banner4",
         "imageName": "Husqvarna250"
     },
     {
@@ -25,6 +26,7 @@
         "isFeatured": true,
         "isFavorite": true,
         "description": "traag poep ding",
+        "image1": "TC125_banner4",
         "imageName": "Husqvarna250"
     },
     {
@@ -34,6 +36,7 @@
         "isFeatured": true,
         "isFavorite": true,
         "description": "traag poep ding",
+        "image1": "TC125_banner4",
         "imageName": "Husqvarna250"
     },
     {
@@ -43,6 +46,7 @@
         "isFeatured": true,
         "isFavorite": true,
         "description": "traag poep ding",
+        "image1": "TC125_banner4",
         "imageName": "Husqvarna250"
     }
     
