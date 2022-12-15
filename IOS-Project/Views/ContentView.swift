@@ -9,7 +9,8 @@ struct ContentView: View {
     
     var body: some View {
         if userIsLoggedIn {
-            MotorList()
+            //MotorList()
+            MapView()
         } else {
             content
         }

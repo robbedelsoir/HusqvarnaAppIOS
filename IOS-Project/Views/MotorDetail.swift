@@ -31,6 +31,9 @@ struct MotorDetail: View {
                             .offset(y:-375)
 
                     )
+                VStack(alignment: .center){
+                    
+                
                 Button{
                     //maps()
                 } label: {
@@ -42,7 +45,7 @@ struct MotorDetail: View {
                         .foregroundColor(.white)
                     
                     
-                    VStack(alignment: .leading) {
+                    
                         Text(landmark.name)
                             .font(.title)
                         
@@ -50,8 +53,8 @@ struct MotorDetail: View {
                         
                         Text(landmark.description)
                         
-                    }
-                    
+                   
+                }
                     .ignoresSafeArea()
                 }
             }}
