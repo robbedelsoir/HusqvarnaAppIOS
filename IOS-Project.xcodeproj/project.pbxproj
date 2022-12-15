@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1416E657294A617500D10927 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416E656294A617500D10927 /* Colors.swift */; };
+		1416E659294BD65C00D10927 /* Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC4EC327293A469600938CC1 /* Video.mp4 */; };
 		606DEB012926C04D0062C9BC /* IOS_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DEB002926C04D0062C9BC /* IOS_ProjectApp.swift */; };
 		606DEB032926C04D0062C9BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DEB022926C04D0062C9BC /* ContentView.swift */; };
 		606DEB052926C04F0062C9BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606DEB042926C04F0062C9BC /* Assets.xcassets */; };
@@ -96,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1416E658294BD57C00D10927 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AC4EC327293A469600938CC1 /* Video.mp4 */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		606DEAF42926C04D0062C9BC = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +156,8 @@
 		AC8A53BB2931159B00C3266E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1416E658294BD57C00D10927 /* Assets */,
 				AC2F557D29436CAE00208B27 /* GoogleService-Info.plist */,
-				AC4EC327293A469600938CC1 /* Video.mp4 */,
 				606DEB042926C04F0062C9BC /* Assets.xcassets */,
 				AC8A53CA2931159B00C3266E /* landmarkData.json */,
 				1416E656294A617500D10927 /* Colors.swift */,
@@ -293,6 +302,7 @@
 				AC8A53D72931159C00C3266E /* landmarkData.json in Resources */,
 				606DEB052926C04F0062C9BC /* Assets.xcassets in Resources */,
 				AC2F557E29436CAF00208B27 /* GoogleService-Info.plist in Resources */,
+				1416E659294BD65C00D10927 /* Video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

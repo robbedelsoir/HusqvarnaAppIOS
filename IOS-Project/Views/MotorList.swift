@@ -13,7 +13,7 @@ struct MotorList: View {
             
             List(landmarks) { landmark in
                 NavigationLink {
-                    MotorDetail(landmark: landmark)
+                    //MotorDetail(landmark: landmark)
                 } label: {
                     MotorRow(landmark: landmark)
                 }

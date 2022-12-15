@@ -10,13 +10,16 @@ import SwiftUI
 struct MotorDetail: View {
     var landmark: Motoroverzicht
     
+    
     var body: some View {
         
         ScrollView {
             
-
+            
             
             VStack(spacing: 20){
+                
+                
                 
                 
                 
@@ -29,35 +32,41 @@ struct MotorDetail: View {
                             .resizable()
                             .frame(width: 112, height: 82, alignment: .center)
                             .offset(y:-375)
-
+                        
                     )
+                
+            
                 VStack(alignment: .center){
                     
-                
-                Button{
-                    //maps()
-                } label: {
-                    Text("FIND A DEALER")
-                        .frame(width: 200, height: 40)
-                        .background(
-                            RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color(hex: 003686)))
-                    //FFED00
-                        .foregroundColor(.white)
                     
-                    
-                    
-                        Text(landmark.name)
-                            .font(.title)
-                        
-                        Divider()
-                        
-                        Text(landmark.description)
-                        
-                   
+                    Button{
+                     //maps()
+                     } label: {
+                     Text("FIND A DEALER")
+                     .frame(width: 200, height: 40)
+                     .background(
+                     RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color(hex: 003686)))
+                     //FFED00
+                     .foregroundColor(.white)
+                     
+                     
+                     
+                     Text(landmark.name)
+                     .font(.title)
+                     
+                     Divider()
+                     
+                     Text(landmark.description)
+                     
+                     
+                     }
+                     .ignoresSafeArea()
+                     }
+                     
                 }
-                    .ignoresSafeArea()
-                }
-            }}
+        }
+            
+        }
     }
     
     struct MotorDetail_Previews: PreviewProvider {
@@ -65,4 +74,4 @@ struct MotorDetail: View {
             MotorDetail(landmark: landmarks[0])
         }
     }
-}
+
