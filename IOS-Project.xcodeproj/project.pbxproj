@@ -26,7 +26,6 @@
 		AC8A53E729311BB900C3266E /* MotorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8A53E629311BB900C3266E /* MotorDetail.swift */; };
 		AC8A53E9293122A400C3266E /* MotorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8A53E8293122A400C3266E /* MotorImage.swift */; };
 		ACA57791294CA6B70039ED28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACA57790294CA6B70039ED28 /* GoogleService-Info.plist */; };
-		ACA57793294CCEA90039ED28 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ACA57792294CCEA90039ED28 /* video2.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +66,6 @@
 		AC8A53E629311BB900C3266E /* MotorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorDetail.swift; sourceTree = "<group>"; };
 		AC8A53E8293122A400C3266E /* MotorImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorImage.swift; sourceTree = "<group>"; };
 		ACA57790294CA6B70039ED28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		ACA57792294CCEA90039ED28 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video2.mp4; path = ../../../../../Downloads/video2.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +98,6 @@
 		1416E658294BD57C00D10927 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				ACA57792294CCEA90039ED28 /* video2.mp4 */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -302,7 +299,6 @@
 				AC8A53D72931159C00C3266E /* landmarkData.json in Resources */,
 				606DEB052926C04F0062C9BC /* Assets.xcassets in Resources */,
 				ACA57791294CA6B70039ED28 /* GoogleService-Info.plist in Resources */,
-				ACA57793294CCEA90039ED28 /* video2.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
