@@ -36,7 +36,9 @@ struct MapView: View {
                 annotationItems: annotationItems) {item in
                 MapMarker(coordinate: item.coordinate)
             }
-        }
+                .onTapGesture {
+                            
+                } }
         .ignoresSafeArea()
     }
         

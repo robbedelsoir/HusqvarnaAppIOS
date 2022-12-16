@@ -12,7 +12,7 @@ struct MotorRow: View {
     
     var body: some View {
         ZStack{
-            landmark.image.renderingMode(.original)
+            landmark.image2.renderingMode(.original)
                 .resizable()
                 .frame(width:250, height: 225)
                 .background(Color.black)

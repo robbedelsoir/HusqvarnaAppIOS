@@ -10,7 +10,7 @@ struct ContentView: View {
     var body: some View {
         if userIsLoggedIn {
             //MotorList()
-            MapView()
+            HomePage()
         } else {
             content
         }
@@ -61,7 +61,7 @@ struct ContentView: View {
                         .bold()
                         .frame(width: 200, height: 40)
                         .background(
-                            RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color(hex: 003686)))
+                            RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color(hex: 003985)))
                         .foregroundColor(.white)
                 }
                 Image("LineYellow")

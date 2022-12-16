@@ -36,37 +36,39 @@ struct MotorDetail: View {
                     )
                 
             
-                VStack(alignment: .center){
-                    
-                    
+                HStack(){
                     Button{
-                     //maps()
-                     } label: {
-                     Text("FIND A DEALER")
-                     .frame(width: 200, height: 40)
-                     .background(
-                     RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color(hex: 003686)))
-                     //FFED00
-                     .foregroundColor(.white)
+                        //maps()
+                    } label: {
+                        Text("FIND A DEALER")
+                            .frame(width: 200, height: 50)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color(hex: 003686)))
+                        //FFED00
+                            .foregroundColor(.white)
+                        
+                        
+                        
+                             }
+                    
+                }
+                .offset(y:-175)
+                
+                
+                Text(landmark.name)
+                .font(.title)
                      
-                     
-                     
-                     Text(landmark.name)
-                     .font(.title)
-                     
-                     Divider()
-                     
-                     Text(landmark.description)
+                Text(landmark.description)
                      
                      
                      }
                      .ignoresSafeArea()
                      }
                      
-                }
+                
         }
             
-        }
+        
     }
     
     struct MotorDetail_Previews: PreviewProvider {

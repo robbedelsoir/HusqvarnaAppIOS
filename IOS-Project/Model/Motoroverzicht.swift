@@ -19,5 +19,12 @@ struct Motoroverzicht: Hashable, Codable, Identifiable {
             Image(image1)
         }
     
+    var imageName: String
+        var image2: Image {
+            Image(imageName)
+        }
+    
+    //imageName
+    
 }
 
