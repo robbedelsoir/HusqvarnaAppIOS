@@ -18,8 +18,11 @@ struct HomePage: View {
           Image("Husqvarna_Motorcycles")
               .resizable()
               .frame(width: 210, height: 66, alignment: .center)
-              
-          HomePageVideo()
+          
+          
+          
+          
+          HomePageVideo().offset( y: 10)
           
           Button {
               print("Edit button was tapped")
@@ -27,9 +30,11 @@ struct HomePage: View {
               Image("Modellen")
                   .resizable()
                   .frame(width: 380, height: 190)
-                  .offset(x: -30)
+                  .offset(x: -30, y: 10)
                   
           }
+          
+          
           
           
                 
@@ -51,6 +56,8 @@ struct HomePage: View {
  guard let instagram = URL(string: "https://www.instagram.com/yourpagename") else { return }
    UIApplication.shared.open(instagram)
  */
+
+
 
 
 struct HomePageVideo: UIViewRepresentable {
