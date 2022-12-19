@@ -15,22 +15,22 @@ struct HomePage: View {
    var body: some View {
        
       VStack {
-          Image("Husqvarna_Motorcycles")
-              .resizable()
-              .frame(width: 210, height: 66, alignment: .center)
-          
-          
-          
-          
-          HomePageVideo().offset( y: 10)
+      
+          HomePageVideo().offset(y:100)
+              .overlay(
+            Image("Husqvarna_Motorcycles")
+                .resizable()
+                .frame(width: 210, height: 66, alignment: .center)
+                .offset(y:-50)
+        )
           
           Button {
               print("Edit button was tapped")
           } label: {
               Image("Modellen")
                   .resizable()
-                  .frame(width: 380, height: 190)
-                  .offset(x: -30, y: 10)
+                  .frame(width: 350, height: 185)
+                  .offset(x: -50, y: 80)
                   
           }
           
@@ -43,11 +43,20 @@ struct HomePage: View {
           } label: {
               Image("FindAShop")
                   .resizable()
-                  .frame(width: 360, height: 190)
-                  .offset(x: 25)
+                  .frame(width: 350, height: 185)
+                  .offset(x: 45, y:20)
           }
           
+          Button {
+              print("Edit button was tapped")
+          } label: {
+              Image("MyAccount")
+                  .resizable()
+                  .frame(width: 350, height: 195)
+                  .offset(x: -30, y: -15)
+          }
       }
+      .ignoresSafeArea()
    }
 }
 
@@ -84,7 +93,7 @@ class LoopingPlayerUIView: UIView {
         super.init(frame: frame)
         
         // Load the resource
-        let fileUrl = Bundle.main.url(forResource: "VideoCropped", withExtension: "mp4")!
+    let fileUrl = Bundle.main.url(forResource: "VideoMain", withExtension: "mp4")!
         let asset = AVAsset(url: fileUrl)
         let item = AVPlayerItem(asset: asset)
         
