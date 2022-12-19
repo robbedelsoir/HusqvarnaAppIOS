@@ -10,6 +10,9 @@
 		1416E657294A617500D10927 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416E656294A617500D10927 /* Colors.swift */; };
 		14F08C8F294D07490016EFE5 /* VideoMain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14F08C8E294D07490016EFE5 /* VideoMain.mp4 */; };
 		14F08C91294D0C7A0016EFE5 /* VideoCropped.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14F08C90294D0C7A0016EFE5 /* VideoCropped.mp4 */; };
+		14F08C932950F7520016EFE5 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F08C922950F7520016EFE5 /* SnapCarousel.swift */; };
+		14F08C952950F9ED0016EFE5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F08C942950F9ED0016EFE5 /* Post.swift */; };
+		14F08C9729510DFC0016EFE5 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F08C9629510DFC0016EFE5 /* MyAccount.swift */; };
 		606DEB012926C04D0062C9BC /* IOS_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DEB002926C04D0062C9BC /* IOS_ProjectApp.swift */; };
 		606DEB032926C04D0062C9BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DEB022926C04D0062C9BC /* ContentView.swift */; };
 		606DEB052926C04F0062C9BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606DEB042926C04F0062C9BC /* Assets.xcassets */; };
@@ -51,6 +54,9 @@
 		1416E656294A617500D10927 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		14F08C8E294D07490016EFE5 /* VideoMain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = VideoMain.mp4; path = ../../../../../Downloads/VideoMain.mp4; sourceTree = "<group>"; };
 		14F08C90294D0C7A0016EFE5 /* VideoCropped.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = VideoCropped.mp4; path = ../../../../../Downloads/VideoCropped.mp4; sourceTree = "<group>"; };
+		14F08C922950F7520016EFE5 /* SnapCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarousel.swift; sourceTree = "<group>"; };
+		14F08C942950F9ED0016EFE5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		14F08C9629510DFC0016EFE5 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
 		606DEAFD2926C04D0062C9BC /* IOS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		606DEB002926C04D0062C9BC /* IOS_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_ProjectApp.swift; sourceTree = "<group>"; };
 		606DEB022926C04D0062C9BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -178,6 +184,8 @@
 				AC8A53E629311BB900C3266E /* MotorDetail.swift */,
 				AC8A53E8293122A400C3266E /* MotorImage.swift */,
 				AC2F55832943999700208B27 /* HomePage.swift */,
+				14F08C922950F7520016EFE5 /* SnapCarousel.swift */,
+				14F08C9629510DFC0016EFE5 /* MyAccount.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +195,7 @@
 			children = (
 				AC8A53D8293116B100C3266E /* Motoroverzicht.swift */,
 				AC8A53DA293117D100C3266E /* ModelData.swift */,
+				14F08C942950F9ED0016EFE5 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -335,11 +344,14 @@
 				1416E657294A617500D10927 /* Colors.swift in Sources */,
 				606DEB032926C04D0062C9BC /* ContentView.swift in Sources */,
 				AC8A53E9293122A400C3266E /* MotorImage.swift in Sources */,
+				14F08C952950F9ED0016EFE5 /* Post.swift in Sources */,
 				606DEB012926C04D0062C9BC /* IOS_ProjectApp.swift in Sources */,
 				AC8A53DB293117D100C3266E /* ModelData.swift in Sources */,
 				AC2F55842943999700208B27 /* HomePage.swift in Sources */,
 				AC8A53D9293116B100C3266E /* Motoroverzicht.swift in Sources */,
+				14F08C9729510DFC0016EFE5 /* MyAccount.swift in Sources */,
 				AC8A53E32931196A00C3266E /* MotorRow.swift in Sources */,
+				14F08C932950F7520016EFE5 /* SnapCarousel.swift in Sources */,
 				AC8A53E529311AA500C3266E /* MotorList.swift in Sources */,
 				AC8A53B829310E7800C3266E /* SwiftUIMap.swift in Sources */,
 			);
