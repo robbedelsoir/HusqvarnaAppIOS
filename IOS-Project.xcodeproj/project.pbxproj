@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1416E657294A617500D10927 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416E656294A617500D10927 /* Colors.swift */; };
+		1491A9B42951C19D009285F3 /* MYing.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1491A9B32951C19D009285F3 /* MYing.ttf */; };
 		14F08C8F294D07490016EFE5 /* VideoMain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14F08C8E294D07490016EFE5 /* VideoMain.mp4 */; };
 		14F08C932950F7520016EFE5 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F08C922950F7520016EFE5 /* SnapCarousel.swift */; };
 		14F08C952950F9ED0016EFE5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F08C942950F9ED0016EFE5 /* Post.swift */; };
 		14F08C9729510DFC0016EFE5 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F08C9629510DFC0016EFE5 /* MyAccount.swift */; };
+		14F08C9A2951B12B0016EFE5 /* Model3DView in Frameworks */ = {isa = PBXBuildFile; productRef = 14F08C992951B12B0016EFE5 /* Model3DView */; };
+		14F08C9C2951B3AD0016EFE5 /* model.dae in Resources */ = {isa = PBXBuildFile; fileRef = 14F08C9B2951B3AD0016EFE5 /* model.dae */; };
 		606DEB012926C04D0062C9BC /* IOS_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DEB002926C04D0062C9BC /* IOS_ProjectApp.swift */; };
 		606DEB032926C04D0062C9BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DEB022926C04D0062C9BC /* ContentView.swift */; };
 		606DEB052926C04F0062C9BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606DEB042926C04F0062C9BC /* Assets.xcassets */; };
@@ -51,10 +54,13 @@
 
 /* Begin PBXFileReference section */
 		1416E656294A617500D10927 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		1491A9B22951C140009285F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1491A9B32951C19D009285F3 /* MYing.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MYing.ttf; path = ../../../../../Downloads/MYing.ttf; sourceTree = "<group>"; };
 		14F08C8E294D07490016EFE5 /* VideoMain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = VideoMain.mp4; path = ../../../../../Downloads/VideoMain.mp4; sourceTree = "<group>"; };
 		14F08C922950F7520016EFE5 /* SnapCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarousel.swift; sourceTree = "<group>"; };
 		14F08C942950F9ED0016EFE5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		14F08C9629510DFC0016EFE5 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
+		14F08C9B2951B3AD0016EFE5 /* model.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = model.dae; path = "../../../../../Downloads/akt-tt-ds-200-repainted/source/model/model.dae"; sourceTree = "<group>"; };
 		606DEAFD2926C04D0062C9BC /* IOS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		606DEB002926C04D0062C9BC /* IOS_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_ProjectApp.swift; sourceTree = "<group>"; };
 		606DEB022926C04D0062C9BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F08C9A2951B12B0016EFE5 /* Model3DView in Frameworks */,
 				AC2F557A29436BDA00208B27 /* FirebaseAuth in Frameworks */,
 				AC2F557C29436BDA00208B27 /* FirebaseFirestore in Frameworks */,
 			);
@@ -106,6 +113,8 @@
 		1416E658294BD57C00D10927 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				1491A9B32951C19D009285F3 /* MYing.ttf */,
+				14F08C9B2951B3AD0016EFE5 /* model.dae */,
 				14F08C8E294D07490016EFE5 /* VideoMain.mp4 */,
 			);
 			path = Assets;
@@ -135,6 +144,7 @@
 		606DEAFF2926C04D0062C9BC /* IOS-Project */ = {
 			isa = PBXGroup;
 			children = (
+				1491A9B22951C140009285F3 /* Info.plist */,
 				AC8A53E0293118F100C3266E /* Views */,
 				AC8A53E12931190F00C3266E /* Model */,
 				AC8A53BB2931159B00C3266E /* Resources */,
@@ -216,6 +226,7 @@
 			packageProductDependencies = (
 				AC2F557929436BDA00208B27 /* FirebaseAuth */,
 				AC2F557B29436BDA00208B27 /* FirebaseFirestore */,
+				14F08C992951B12B0016EFE5 /* Model3DView */,
 			);
 			productName = "IOS-Project";
 			productReference = 606DEAFD2926C04D0062C9BC /* IOS-Project.app */;
@@ -291,6 +302,7 @@
 			mainGroup = 606DEAF42926C04D0062C9BC;
 			packageReferences = (
 				AC2F557829436BDA00208B27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				14F08C982951B12B0016EFE5 /* XCRemoteSwiftPackageReference "Model3DView" */,
 			);
 			productRefGroup = 606DEAFE2926C04D0062C9BC /* Products */;
 			projectDirPath = "";
@@ -311,7 +323,9 @@
 				14F08C8F294D07490016EFE5 /* VideoMain.mp4 in Resources */,
 				AC8A53D72931159C00C3266E /* landmarkData.json in Resources */,
 				606DEB052926C04F0062C9BC /* Assets.xcassets in Resources */,
+				1491A9B42951C19D009285F3 /* MYing.ttf in Resources */,
 				ACA57791294CA6B70039ED28 /* GoogleService-Info.plist in Resources */,
+				14F08C9C2951B3AD0016EFE5 /* model.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +524,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"IOS-Project/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IOS-Project/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -539,6 +554,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"IOS-Project/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IOS-Project/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -672,6 +688,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		14F08C982951B12B0016EFE5 /* XCRemoteSwiftPackageReference "Model3DView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/frzi/Model3DView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
 		AC2F557829436BDA00208B27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -683,6 +707,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		14F08C992951B12B0016EFE5 /* Model3DView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14F08C982951B12B0016EFE5 /* XCRemoteSwiftPackageReference "Model3DView" */;
+			productName = Model3DView;
+		};
 		AC2F557929436BDA00208B27 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AC2F557829436BDA00208B27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

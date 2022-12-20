@@ -9,8 +9,8 @@ struct ContentView: View {
     
     var body: some View {
         if userIsLoggedIn {
-            //MotorList()
-            HomePage()
+       MotorList()
+            
         } else {
             content
         }

@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct MotorList: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
         NavigationView {
             
             List(landmarks) { landmark in
                 NavigationLink {
-                    //MotorDetail(landmark: landmark)
+                    MotorDetail(landmark: landmark)
+                    
                 } label: {
                     MotorRow(landmark: landmark)
                 }
                 
-                .navigationTitle("Motoren")
+               
             }
         }
     }

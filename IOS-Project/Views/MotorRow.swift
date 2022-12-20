@@ -12,6 +12,7 @@ struct MotorRow: View {
     
     var body: some View {
         ZStack{
+            /*
             landmark.image2.renderingMode(.original)
                 .resizable()
                 .frame(width:250, height: 225)
@@ -19,7 +20,7 @@ struct MotorRow: View {
                 .cornerRadius(10)
                 .opacity(0.9)
                 .aspectRatio(contentMode: .fill)
-            
+            */
             Text(landmark.name)
                 .foregroundColor(Color.black)
                 .font(.system(size: 20, weight: .bold, design: Font.Design.default))
