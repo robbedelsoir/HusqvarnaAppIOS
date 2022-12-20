@@ -16,6 +16,7 @@ struct MotorDetail: View {
     
     
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    
     var body: some View {
         
        
@@ -28,7 +29,7 @@ struct MotorDetail: View {
                
                 
                 
-                
+                /*
                 Image(landmark.banner1)
                     .resizable()
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .center)
@@ -71,8 +72,10 @@ struct MotorDetail: View {
                     .bold(true)
                     .foregroundColor(Color(hex: 003985))
                     .padding(.top, -120)
+                */
                 VStack(spacing: 15)
                 {
+                    
                     VStack (alignment: .leading, spacing: 12) {} .frame(maxWidth: .infinity,alignment: .leading) .padding()
                     // Snap Carousel....
                     SnapCarousel (trailingSpace: 150,index: $currentIndex, items: posts)
@@ -92,9 +95,9 @@ struct MotorDetail: View {
                     .frame(maxHeight: .infinity, alignment: .top)
                     .onAppear{ for index in 1...3{
                         posts.append(Post(postImage:
-                                            landmark.overview + "\(index)"))}
+                                            "\(landmark.overview) + \(index)"))}
                 }
-                
+                /*
                 Text(landmark.description)
                     .padding(20)
                     .font(.custom("MYing", size: 18))
@@ -105,10 +108,10 @@ struct MotorDetail: View {
                     .resizable()
                     .frame(width: UIScreen.main.bounds.width, height:250, alignment: .center)
                 
-                Image(landmark.banner1)
+                Image(landmark.overview2)
                     .resizable()
                     .frame(width: UIScreen.main.bounds.width, height:250, alignment: .center)
-                
+                */
                      }
                      .ignoresSafeArea()
                      }
@@ -123,7 +126,7 @@ struct MotorDetail: View {
     
     struct MotorDetail_Previews: PreviewProvider {
         static var previews: some View {
-            MotorDetail(landmark: landmarks[0])
+            MotorDetail(landmark: landmarks[1])
         }
     }
 

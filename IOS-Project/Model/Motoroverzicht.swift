@@ -71,7 +71,7 @@ struct Motoroverzicht: Hashable, Codable, Identifiable {
         }
     var overview: String
         var image_overview: Image {
-            Image(overview6)
+            Image(overview2)
         }
     //imageName
     
