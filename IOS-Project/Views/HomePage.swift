@@ -20,7 +20,7 @@ struct HomePage: View {
               .overlay(
             Image("Husqvarna_Motorcycles")
                 .resizable()
-                .frame(width: 210, height: 66, alignment: .center)
+                .frame(width: 220, height: 66, alignment: .center)
                 .offset(y:-50)
         )
           

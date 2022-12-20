@@ -29,7 +29,7 @@ struct MotorDetail: View {
                
                 
                 
-                /*
+               
                 Image(landmark.banner1)
                     .resizable()
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .center)
@@ -53,10 +53,11 @@ struct MotorDetail: View {
                         //maps()
                     } label: {
                         Text("FIND A DEALER")
+                            .font(.custom("MYing", size: 16))
+                            .bold(true)
                             .frame(width: 200, height: 50)
                             .background(
                                 RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color(hex: 003686)))
-                        //FFED00
                             .foregroundColor(.white)
                         
                         
@@ -72,13 +73,13 @@ struct MotorDetail: View {
                     .bold(true)
                     .foregroundColor(Color(hex: 003985))
                     .padding(.top, -120)
-                */
+              
                 VStack(spacing: 15)
                 {
                     
                     VStack (alignment: .leading, spacing: 12) {} .frame(maxWidth: .infinity,alignment: .leading) .padding()
                     // Snap Carousel....
-                    SnapCarousel (trailingSpace: 150,index: $currentIndex, items: posts)
+                    SnapCarousel (trailingSpace: 27,index: $currentIndex, items: posts)
                     {post in
                         GeometryReader{proxy in
                             let size = proxy.size
@@ -88,30 +89,30 @@ struct MotorDetail: View {
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: size.width)
                                 .cornerRadius(12)
+                                .padding(.top, -200)
                         }
                     }
                     .padding(.vertical,80)
                 }
                     .frame(maxHeight: .infinity, alignment: .top)
-                    .onAppear{ for index in 1...3{
-                        posts.append(Post(postImage:
-                                            "\(landmark.overview) + \(index)"))}
+                    .onAppear{ for index in 1...5{
+                        posts.append(Post(postImage:  "\(String(landmark.name))" + "_overview\(index)"))}
                 }
-                /*
+            
+                
                 Text(landmark.description)
-                    .padding(20)
                     .font(.custom("MYing", size: 18))
- 
                     .foregroundColor(Color(hex: 003985))
+                    .padding(20)
+                    .padding(.top, -10)
+                    
                 
                 Image(landmark.banner2)
                     .resizable()
                     .frame(width: UIScreen.main.bounds.width, height:250, alignment: .center)
                 
-                Image(landmark.overview2)
-                    .resizable()
-                    .frame(width: UIScreen.main.bounds.width, height:250, alignment: .center)
-                */
+               
+                
                      }
                      .ignoresSafeArea()
                      }
@@ -126,7 +127,7 @@ struct MotorDetail: View {
     
     struct MotorDetail_Previews: PreviewProvider {
         static var previews: some View {
-            MotorDetail(landmark: landmarks[1])
+            MotorDetail(landmark: landmarks[0])
         }
     }
 

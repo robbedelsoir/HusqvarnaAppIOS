@@ -10,14 +10,7 @@
         "banner1": "TC125_banner1",
         "banner2": "TC125_banner2",
         "banner3": "TC125_banner3",
-        "banner4": "TC125_banner4",
-        "overview": "TC250_overview1",
-        "overview1": "TC125_overview1",
-        "overview2": "TC125_overview2",
-        "overview3": "TC125_overview3",
-        "overview4": "TC125_overview4",
-        "overview5": "TC125_overview5",
-        "overview6": "TC125_overview6"
+        "banner4": "TC125_banner4"
     },
     {
         "name": "TC250",
@@ -30,19 +23,12 @@
         "banner1": "TC250_banner1",
         "banner2": "TC250_banner2",
         "banner3": "TC250_banner3",
-        "banner4": "TC250_banner4",
-        "overview": "TC250_overview1",
-        "overview1": "TC250_overview1",
-        "overview2": "TC250_overview2",
-        "overview3": "TC250_overview3",
-        "overview4": "TC250_overview4",
-        "overview5": "TC250_overview5",
-        "overview6": "TC250_overview6"
+        "banner4": "TC250_banner4"
     },
     {
         "name": "FC250",
         "category": "Enduro",
-        "id": 1002,
+        "id": 1003,
         "isFeatured": true,
         "isFavorite": true,
         "description": "traag poep ding",
@@ -50,19 +36,12 @@
         "banner1": "FC250_banner1",
         "banner2": "FC250_banner2",
         "banner3": "FC250_banner3",
-        "banner4": "FC250_banner4",
-        "overview": "TC250_overview1",
-        "overview1": "FC250_overview1",
-        "overview2": "FC250_overview2",
-        "overview3": "FC250_overview3",
-        "overview4": "FC250_overview4",
-        "overview5": "FC250_overview5",
-        "overview6": "FC250_overview6"
+        "banner4": "FC250_banner4"
     },
     {
         "name": "RE250",
         "category": "Enduro",
-        "id": 1002,
+        "id": 1004,
         "isFeatured": true,
         "isFavorite": true,
         "description": "traag poep ding",
@@ -70,19 +49,12 @@
         "banner2": "RE250_banner2",
         "banner3": "RE250_banner3",
         "banner4": "RE250_banner4",
-        "imageName": "Husqvarna250",
-        "overview": "TC250_overview1",
-        "overview1": "RE250_overview1",
-        "overview2": "RE250_overview2",
-        "overview3": "RE250_overview3",
-        "overview4": "RE250_overview4",
-        "overview5": "RE250_overview5",
-        "overview6": "RE250_overview6"
+        "imageName": "Husqvarna250"
     },
     {
         "name": "FC350",
         "category": "Enduro",
-        "id": 1003,
+        "id": 1005,
         "isFeatured": true,
         "isFavorite": true,
         "description": "traag poep ding",
@@ -91,18 +63,11 @@
         "banner2": "FC350_banner2",
         "banner3": "FC350_banner3",
         "banner4": "FC350_banner4",
-        "overview": "TC250_overview1",
-        "overview1": "FC350_overview1",
-        "overview2": "FC350_overview2",
-        "overview3": "FC350_overview3",
-        "overview4": "FC350_overview4",
-        "overview5": "FC350_overview5",
-        "overview6": "FC350_overview6"
     },
     {
         "name": "HE350",
         "category": "Enduro",
-        "id": 1004,
+        "id": 1006,
         "isFeatured": true,
         "isFavorite": true,
         "description": "traag poep ding",
@@ -111,13 +76,6 @@
         "banner2": "HE350_banner2",
         "banner3": "HE350_banner3",
         "banner4": "HE350_banner4",
-        "overview": "TC250_overview1",
-        "overview1": "HE350_overview1",
-        "overview2": "HE350_overview2",
-        "overview3": "HE350_overview3",
-        "overview4": "HE350_overview4",
-        "overview5": "HE350_overview5",
-        "overview6": "HE350_overview6"
     }
     
     

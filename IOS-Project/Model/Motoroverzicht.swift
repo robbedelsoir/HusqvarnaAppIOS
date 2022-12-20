@@ -40,39 +40,7 @@ struct Motoroverzicht: Hashable, Codable, Identifiable {
             Image(imageName)
         }
     
-    var overview1: String
-        var image_overview1: Image {
-            Image(overview1)
-        }
-    
-    var overview2: String
-        var image_overview2: Image {
-            Image(overview2)
-        }
-    
-    var overview3: String
-        var image_overview3: Image {
-            Image(overview3)
-        }
-    
-    var overview4: String
-        var image_overview4: Image {
-            Image(overview4)
-        }
-    
-    var overview5: String
-        var image_overview5: Image {
-            Image(overview5)
-        }
-    
-    var overview6: String
-        var image_overview6: Image {
-            Image(overview6)
-        }
-    var overview: String
-        var image_overview: Image {
-            Image(overview2)
-        }
+  
     //imageName
     
 }
