@@ -100,6 +100,7 @@ struct MotorDetail: View {
                 }
             
                 
+                
                 Text(landmark.description)
                     .font(.custom("MYing", size: 18))
                     .foregroundColor(Color(hex: 003985))

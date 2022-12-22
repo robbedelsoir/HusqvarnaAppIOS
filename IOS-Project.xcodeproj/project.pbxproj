@@ -172,7 +172,6 @@
 		AC8A53BB2931159B00C3266E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1416E658294BD57C00D10927 /* Assets */,
 				ACA57790294CA6B70039ED28 /* GoogleService-Info.plist */,
 				606DEB042926C04F0062C9BC /* Assets.xcassets */,
 				AC8A53CA2931159B00C3266E /* landmarkData.json */,
@@ -203,6 +202,7 @@
 				AC8A53D8293116B100C3266E /* Motoroverzicht.swift */,
 				AC8A53DA293117D100C3266E /* ModelData.swift */,
 				14F08C942950F9ED0016EFE5 /* Post.swift */,
+				1416E658294BD57C00D10927 /* Assets */,
 			);
 			path = Model;
 			sourceTree = "<group>";

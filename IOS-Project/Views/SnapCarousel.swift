@@ -34,6 +34,7 @@ struct SnapCarousel<Content : View,T: Identifiable>: View{
             
             let width = proxy.size.width - (trailingSpace - spacing)
             let adjustMentWidth = (trailingSpace / 2) - spacing
+            
             HStack(spacing: spacing){
             
             
@@ -41,34 +42,35 @@ struct SnapCarousel<Content : View,T: Identifiable>: View{
                 content(item)
                     .frame(width: proxy.size.width - trailingSpace)
             }
+            .padding(.horizontal,spacing)
+            .offset(x: (CGFloat(currentIndex) * -width) + (currentIndex != 0 ? adjustMentWidth : 0) + offset)
+            .gesture(
+                DragGesture()
+                    .updating($offset, body: { value, out, _ in
+                        
+                        out = value.translation.width
+                    })
+                    .onEnded({ value in
+                        
+                        //Update current index for scroll
+                        let offsetX = value.translation.width
+                        
+                        //convert the translation into progress (0-1)
+                        //round the value based on the currentIndex
+                        
+                        let progress = -offsetX / width
+                        
+                        let roundIndex = progress.rounded()
+                        
+                        //setting max and min
+                        currentIndex = max(min(currentIndex + Int(roundIndex), list.count - 1), 0)
+                        
+                        //updating index
+                        currentIndex = index
+                    })
+                )
         }
-        .padding(.horizontal,spacing)
-        .offset(x: (CGFloat(currentIndex) * -width) + (currentIndex != 0 ? adjustMentWidth: 0) + offset)
-        .gesture(
-            DragGesture()
-                .updating($offset, body: { value, out, _ in
-                    
-                    out = value.translation.width
-                })
-                .onEnded({ value in
-                    
-                    //Update current index for scroll
-                    let offsetX = value.translation.width
-                    
-                    //convert the translation into progress (0-1)
-                    //round the value based on the currentIndex
-                    
-                    let progress = -offsetX / width
-                    
-                    let roundIndex = progress.rounded()
-                    
-                    //setting max and min
-                    currentIndex = max(min(currentIndex + Int(roundIndex), list.count - 1), 0)
-                    
-                    //updating index
-                    currentIndex = index
-                })
-            )
+            
         }
         //animation when offset = 0
         .animation(.easeInOut, value: offset == 0)
@@ -77,6 +79,6 @@ struct SnapCarousel<Content : View,T: Identifiable>: View{
 
 struct SnapCarousel_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MotorDetail(landmark: landmarks[0])
     }
 }

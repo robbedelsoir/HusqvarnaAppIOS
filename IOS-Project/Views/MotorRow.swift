@@ -12,19 +12,22 @@ struct MotorRow: View {
     
     var body: some View {
         ZStack{
-            /*
-            landmark.image2.renderingMode(.original)
+            
+            landmark.image2
+                .renderingMode(.original)
                 .resizable()
-                .frame(width:250, height: 225)
-                .background(Color.black)
-                .cornerRadius(10)
-                .opacity(0.9)
+                .frame(width:200, height: 160)
                 .aspectRatio(contentMode: .fill)
-            */
+                .offset(x: -80)
+            
+            
+            
             Text(landmark.name)
-                .foregroundColor(Color.black)
-                .font(.system(size: 20, weight: .bold, design: Font.Design.default))
-                
+                .font(.custom("MYing", size: 40))
+                .bold(true)
+                .foregroundColor(Color(hex: 003985))
+                .offset(x: 92, y: 40)
+            
             Spacer()
             
             
