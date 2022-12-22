@@ -5,7 +5,10 @@ struct MyAnnotationItem: Identifiable {
     let id = UUID()
 }
 
-struct MapView: View {
+struct SwiftUIMap: View {
+    
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    
     @State var coordinateRegion: MKCoordinateRegion = {
         var newRegion = MKCoordinateRegion()
         newRegion.center.latitude = 50.80580148204638
@@ -47,7 +50,7 @@ struct MapView: View {
 
 struct Previews_SwiftUIMap_Previews: PreviewProvider {
     static var previews: some View {
-    MapView()
+        SwiftUIMap()
         }
     }
 

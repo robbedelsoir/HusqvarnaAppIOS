@@ -13,6 +13,7 @@ import Model3DView
 
 
 struct MyAccount: View {
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
     @State var camera = PerspectiveCamera()
     

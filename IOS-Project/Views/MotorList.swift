@@ -11,7 +11,7 @@ struct MotorList: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-        NavigationView {
+        
             
             List(landmarks) { landmark in
                 NavigationLink {
@@ -22,7 +22,7 @@ struct MotorList: View {
                 }
                 
                
-            }
+            
         }
     }
     

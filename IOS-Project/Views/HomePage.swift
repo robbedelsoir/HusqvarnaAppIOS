@@ -12,49 +12,76 @@ import AVFoundation
 
 
 struct HomePage: View {
+    
+    @State var isShowingMotorList = false
+    @State var isShowingSwiftUIView = false
+    @State var isShowingMyAccount = false
+    
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    
    var body: some View {
-       
-      VStack {
-      
-          HomePageVideo().offset(y:100)
-              .overlay(
-            Image("Husqvarna_Motorcycles")
-                .resizable()
-                .frame(width: 220, height: 66, alignment: .center)
-                .offset(y:-50)
-        )
-          
-          Button {
-              print("Edit button was tapped")
-          } label: {
-              Image("Modellen")
-                  .resizable()
-                  .frame(width: 350, height: 185)
-                  .offset(x: -50, y: 80)
-                  
-          }
-          
-          
-          
-          
-                
-          Button {
-              print("Edit button was tapped")
-          } label: {
-              Image("FindAShop")
-                  .resizable()
-                  .frame(width: 350, height: 185)
-                  .offset(x: 45, y:20)
-          }
-          
-          Button {
-              print("Edit button was tapped")
-          } label: {
-              Image("MyAccount")
-                  .resizable()
-                  .frame(width: 350, height: 195)
-                  .offset(x: -30, y: -15)
-          }
+       NavigationView {
+           
+           
+           VStack {
+               
+               HomePageVideo().offset(y:100)
+                   .overlay(
+                    Image("Husqvarna_Motorcycles")
+                        .resizable()
+                        .frame(width: 220, height: 66, alignment: .center)
+                        .offset(y:-50)
+                   )
+               
+               
+               VStack {
+                   NavigationLink(destination: MotorList(), isActive:$isShowingMotorList) { EmptyView()}
+                   
+                   Button {
+                       self.isShowingMotorList = true
+                   }
+               label: {
+                   Image("Modellen")
+                       .resizable()
+                       .frame(width: 340, height: 175)
+                       .offset(x: -50, y: 100)
+                   
+               }
+               }
+               
+               
+               VStack {
+                   NavigationLink(destination: SwiftUIMap(), isActive:$isShowingSwiftUIView) { EmptyView()}
+                   
+                   Button {
+                       self.isShowingSwiftUIView = true
+                   }
+               label: {
+                   Image("FindAShop")
+                       .resizable()
+                       .frame(width: 340, height: 175)
+                       .offset(x: 45, y:40)
+               }
+               }
+               
+               VStack {
+               NavigationLink(destination: MyAccount(), isActive:$isShowingMyAccount) { EmptyView()}
+                   
+                   Button {
+                       self.isShowingMyAccount = true
+                   }
+               label: {
+                   Image("MyAccount")
+                       .resizable()
+                       .frame(width: 340, height: 185)
+                       .offset(x: -30, y: 5)
+               }
+               }
+               
+           }
+               
+               
+              
       }
       .ignoresSafeArea()
    }

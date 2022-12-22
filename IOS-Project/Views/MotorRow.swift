@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MotorRow: View {
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     var landmark: Motoroverzicht
     
     var body: some View {
@@ -16,7 +17,7 @@ struct MotorRow: View {
             landmark.image2
                 .renderingMode(.original)
                 .resizable()
-                .frame(width:200, height: 160)
+                .frame(width:200, height: 155)
                 .aspectRatio(contentMode: .fill)
                 .offset(x: -80)
             
