@@ -13,6 +13,8 @@ import AVFoundation
 
 struct HomePage: View {
     
+    @EnvironmentObject var dataManager: DataManager
+    
     @State var isShowingMotorList = false
     @State var isShowingSwiftUIView = false
     @State var isShowingMyAccount = false
@@ -20,6 +22,7 @@ struct HomePage: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
    var body: some View {
+
        NavigationView {
            
            
@@ -51,7 +54,7 @@ struct HomePage: View {
                
                
                VStack {
-                   NavigationLink(destination: SwiftUIMap(), isActive:$isShowingSwiftUIView) { EmptyView()}
+                   NavigationLink(destination: SwiftUIMap().environmentObject(dataManager), isActive:$isShowingSwiftUIView) { EmptyView()}
                    
                    Button {
                        self.isShowingSwiftUIView = true
@@ -65,25 +68,27 @@ struct HomePage: View {
                }
                
                VStack {
-               NavigationLink(destination: MyAccount(), isActive:$isShowingMyAccount) { EmptyView()}
+                   NavigationLink(destination: MyAccount(), isActive:$isShowingMyAccount) { EmptyView()}
                    
                    Button {
                        self.isShowingMyAccount = true
                    }
                label: {
-                   Image("MyAccount")
+                   Image("Reviews")
                        .resizable()
                        .frame(width: 340, height: 185)
                        .offset(x: -30, y: 5)
                }
                }
+             
                
-           }
+               .ignoresSafeArea()
                
                
               
       }
-      .ignoresSafeArea()
+     
+        
    }
 }
 
@@ -142,12 +147,13 @@ class LoopingPlayerUIView: UIView {
         playerLayer.frame = bounds
             
     }
-    
+}
     
     
     struct HomePage_Previews: PreviewProvider {
         static var previews: some View {
             HomePage()
+                .environmentObject(DataManager())
         }
     }
 }

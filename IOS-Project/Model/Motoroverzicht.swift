@@ -13,6 +13,9 @@ struct Motoroverzicht: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     var description: String
+    var enginetext: String
+    var frametext: String
+    var bodyworktext: String
     
     var banner1: String
         var image_banner1: Image {
@@ -40,7 +43,22 @@ struct Motoroverzicht: Hashable, Codable, Identifiable {
             Image(imageName)
         }
     
-  
+    var engine: String
+    var image3: Image{
+            Image(engine)
+    }
+    
+    var frame: String
+        var image4: Image {
+            Image(frame)
+        }
+    
+    var bodywork: String
+        var image5: Image {
+            Image(bodywork)
+        }
+    
+    
     //imageName
     
 }

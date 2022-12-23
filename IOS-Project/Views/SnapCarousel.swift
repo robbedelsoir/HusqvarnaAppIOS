@@ -32,7 +32,7 @@ struct SnapCarousel<Content : View,T: Identifiable>: View{
         
         GeometryReader{ proxy in
             
-            let width = proxy.size.width - (trailingSpace - spacing)
+            let width = proxy.size.width - (trailingSpace - spacing * 3)
             let adjustMentWidth = (trailingSpace / 2) - spacing
             
             HStack(spacing: spacing){
@@ -65,8 +65,7 @@ struct SnapCarousel<Content : View,T: Identifiable>: View{
                         //setting max and min
                         currentIndex = max(min(currentIndex + Int(roundIndex), list.count - 1), 0)
                         
-                        //updating index
-                        currentIndex = index
+
                     })
                 )
         }

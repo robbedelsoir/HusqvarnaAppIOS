@@ -2,17 +2,19 @@
 import SwiftUI
 import Firebase
 
+
 struct ContentView: View {
-    @State private var email = ""
-    @State private var password = ""
+    @State var email = ""
+    @State var password = ""
     @State private var userIsLoggedIn = false
+    
+    @StateObject var dataManager = DataManager()
     
     var body: some View {
         if userIsLoggedIn {
-       HomePage()
+            HomePage().environmentObject(dataManager)
             
-        } else {
-            content
+        } else {            content
         }
         
         

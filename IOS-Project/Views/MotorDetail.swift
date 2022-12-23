@@ -15,6 +15,7 @@ struct MotorDetail: View {
     @State var posts: [Post] = []
     
     @State var isShowingSwiftUIView = false
+    @State var isShowing_DModelView = false
     
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
@@ -102,17 +103,73 @@ struct MotorDetail: View {
                         posts.append(Post(postImage:  "\(String(landmark.name))" + "_overview\(index)"))}
                     }
                     
+                    Group {
+                        Text(landmark.description)
+                            .font(.custom("MYing", size: 18))
+                            .foregroundColor(Color(hex: 003985))
+                            .padding(20)
+                            .padding(.top, -10)
+                        
+                        
+                        Image(landmark.banner2)
+                            .resizable()
+                            .frame(width: UIScreen.main.bounds.width, height:220, alignment: .center)
+                            .padding(.bottom, 20)
+                        
+                        Image(landmark.engine)
+                            .resizable()
+                            .frame(width: 250, height: 250)
+                            .offset()
+                        
+                        
+                        Text(landmark.enginetext)
+                            .font(.custom("MYing", size: 18))
+                            .foregroundColor(Color(hex: 003985))
+                            .padding(20)
+                            .padding(.top, -20)
+                        
+                        Image(landmark.banner3)
+                            .resizable()
+                            .frame(width: UIScreen.main.bounds.width, height:220, alignment: .center)
+                            .padding(.bottom, 20)
+                        
+                        Image(landmark.frame)
+                            .resizable()
+                            .frame(width: 200, height: 200)
+                            .offset()
+                        
+                        Text(landmark.frametext)
+                            .font(.custom("MYing", size: 18))
+                            .foregroundColor(Color(hex: 003985))
+                            .padding(20)
+                            .padding(.top, -10)
+                        
+                        Image(landmark.banner4)
+                            .resizable()
+                            .frame(width: UIScreen.main.bounds.width, height:220, alignment: .center)
+                            .padding(.bottom, 20)
+                        
+                        
+                        
+                        VStack {
+                            NavigationLink(destination: _DModel(), isActive:$isShowing_DModelView) { EmptyView()}
+                            
+                            Button {
+                                self.isShowing_DModelView = true
+                            }
+                        label:
+                            {
+                                Text("SHOW 3D MODEL")
+                                    .font(.custom("MYing", size: 16))
+                                    .bold(true)
+                                    .frame(width: 200, height: 50)
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color(hex: 003686)))
+                                    .foregroundColor(.white)
+                            }
+                        }
+                    }
                     
-                    Text(landmark.description)
-                        .font(.custom("MYing", size: 18))
-                        .foregroundColor(Color(hex: 003985))
-                        .padding(20)
-                        .padding(.top, -10)
-                    
-                    
-                    Image(landmark.banner2)
-                        .resizable()
-                        .frame(width: UIScreen.main.bounds.width, height:250, alignment: .center)
                 }
                 .ignoresSafeArea()
             }
